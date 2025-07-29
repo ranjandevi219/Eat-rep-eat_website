@@ -3,7 +3,6 @@
 **Eat_rep_eat** is a food ordering web application built for BMSCE students.  
 It allows students to browse menus from three college canteens and place orders directly from the website. Online payments are supported via Stripe API.
 
----
 
 ## Key Features
 - Student signup and login
@@ -11,7 +10,6 @@ It allows students to browse menus from three college canteens and place orders 
 - Cart and order management
 - Stripe-based online payment
 
----
 
 ## Tech Stack
 - Frontend: EJS Templates, HTML, CSS
@@ -20,7 +18,6 @@ It allows students to browse menus from three college canteens and place orders 
 - Payments: Stripe API
 - Others: JSON-based menu data
 
----
 
 ## Project Structure
 - `views/` – EJS templates (login, signup, menus)
@@ -30,7 +27,6 @@ It allows students to browse menus from three college canteens and place orders 
 - `items.json` files – Menu data for each canteen
 - `.env` – Environment config (not included in repo)
 
----
 
 ## About the Project
 

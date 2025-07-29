@@ -1,0 +1,169 @@
+{
+    "food":[
+        {
+            "id":31,
+            "name": "MASALA DOSA",
+            "price":60,
+            "imgName":"d2.jpg"
+        },
+        {
+            "id":32,
+            "name": "AKKI ROTI",
+            "price":60,
+            "imgName":"AkkiRoti.jpg"
+        },
+        {
+            "id":33,
+            "name": "MANGALORE BUNS",
+            "price":50,
+            "imgName":"bun.jpg"
+        },
+        {
+            "id":34,
+            "name": "MYSORE MASALA DOSA",
+            "price":70,
+            "imgName":"d7.jpg"
+        },
+        {
+            "id":35,
+            "name": "GOBI",
+            "price":60,
+            "imgName":"gobi1.jpg"
+        },
+        {
+            "id":36,
+            "name": "PANEER ROLL",
+            "price":60,
+            "imgName":"rolls2.jpg"
+        },
+        {
+            "id":37,
+            "name": "MUSHROOM SANDWICH",
+            "price":70,
+            "imgName":"sandwich1.jpg"
+        },
+        {
+            "id":38,
+            "name": "BABY CORN MASALA",
+            "price":50,
+            "imgName":"babycorn.jpg"
+        },
+        {
+            "id":39,
+            "name": "MAGGIE",
+            "price":40,
+            "imgName":"maggie.jpg"
+        },
+        {
+            "id":40,
+            "name": "FRIES",
+            "price":60,
+            "imgName":"fries.jpg"
+        },
+        {
+            "id":42,
+            "name": "PARATHA",
+            "price":70,
+            "imgName":"paratha.jpg"
+        },
+        {
+            "id":43,
+            "name": "GOBI NOODLES",
+            "price":60,
+            "imgName":"noodles2.jpg"
+        },
+        {
+            "id":44,
+            "name": "IDLI",
+            "price":30,
+            "imgName":"idli.jpg"
+        },
+        {
+            "id":45,
+            "name": "PULAV",
+            "price":50,
+            "imgName":"rice2.jpg"
+        },
+        {
+            "id":46,
+            "name": "FRIED RICE",
+            "price":50,
+            "imgName":"rice1.jpg"
+        }
+    ],
+    "beverages":[
+        {
+            "id":106,
+            "name": "BLUE LIME SODA",
+            "price":50,
+            "imgName":"bluelimesoda.jpg"
+        },
+        {
+            "id":107,
+            "name": "MUSKMELON JUICE",
+            "price":40,
+            "imgName":"muskmelon.jpg"
+        },
+        {
+            "id":108,
+            "name": "NIMBU SODA",
+            "price":35,
+            "imgName":"neembo.jpg"
+        },
+        {
+            "id":100,
+            "name": "WATERMELON JUICE",
+            "price":40,
+            "imgName":"watermelon.jpg"
+        },
+        {
+            "id":101,
+            "name": "TEA",
+            "price":10,
+            "imgName":"tea2.jpg"
+        },
+        {
+            "id":102,
+            "name": "COFFEE",
+            "price":10,
+            "imgName":"coffee.jpg"
+        },
+        {
+            "id":103,
+            "name": "STRAWBERRY JUICE",
+            "price":60,
+            "imgName":"strawberry.jpg"
+        },
+        {
+            "id":104,
+            "name": "OREO MILKSHAKE",
+            "price":50,
+            "imgName":"oreo1.jpg"
+        },
+        {
+            "id":105,
+            "name": "BADAM MILK",
+            "price":50,
+            "imgName":"badam.jpg"
+        },
+        {
+            "id":109,
+            "name": "CHOCOLATE CONE",
+            "price":40,
+            "imgName":"choco.jpg"
+        },
+        {
+            "id":110,
+            "name": "STRAWBERRY CONE",
+            "price":40,
+            "imgName":"strawberry icecream.jpg"
+        },
+        {
+            "id":111,
+            "name": "PISTA CONE",
+            "price":50,
+            "imgName":"pista.jpg"
+        }
+    ]
+
+}

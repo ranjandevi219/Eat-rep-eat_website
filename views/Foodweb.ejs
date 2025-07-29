@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sip & Snack</title>
+    <link rel="stylesheet" href="Foodweb.css">
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script>
+        var stripePublicKey = '<%= stripePublicKey %>'
+    </script>
+    <script src="foodweb.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="logo">
+                <h1>SIP & SNACK</h1>
+            </div>
+            <div class="input">
+                <input type="text" value="" id="inp" placeholder="Search Here ..." onkeyup="myFun()" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icon">
+                <i onclick="login()" class="fa-solid fa-user"></i>
+                <a href="#cart" style="color: aliceblue;">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="index">
+                <i style="color: aliceblue;" class="fa-solid fa-house"></i>
+                </a>
+            </div>
+        </nav>
+
+
+        <div class="login">
+            <a href="login">Log Out</a>
+        </div>
+        <div class="nav">
+            <a href="index">Home </a>
+        </div>
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="head">
+                        <h1><span>FAST FOOD</span></h1>
+                    </div>
+                    <div class="crd">
+                        <% items.food.forEach(function(item){ %>
+                        <div class="card" data-item-id="<%= item.id %>">
+                            <img class="food-image" src="<%= item.imgName %>" alt="">
+                            <h2 class="food-price">₹<%= item.price %> </h2>
+                            <p class="food-title"><%= item.name %></p>
+                            <button class="order-btn" type="button"> Order Now</button>
+                        </div>
+                        <% }) %>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <div class="head">
+                        <h1><span>BEVERAGES</span></h1>
+                    </div>
+                    <div class="crd">
+                        <div class="crd">
+                            <% items.beverages.forEach(function(item){ %>
+                            <div class="card" data-item-id="<%= item.id %>">
+                                <img class="food-image" src="<%= item.imgName %>" alt="">
+                                <h2 class="food-price">₹<%= item.price %> </h2>
+                                <p class="food-title"><%= item.name %></p>
+                                <button class="order-btn" type="button"> Order Now</button>
+                            </div>
+                            <% }) %>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    
+    <div class="head">
+        <h1><span>Cart</span></h1>
+    </div>
+     <section class="container content-section" id="cart">
+        <!-- <h2 class="section-header">CART</h2> -->
+       
+
+        <div class="cart-row">
+            
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price" >₹0</span>
+            
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PAY NOW</button>
+    
+    </section>
+           
+    <!-- Customer Review -->
+
+    <div class="head">
+        <h1><span>Students Review</span></h1>
+    </div>
+    <div class="review">
+
+        <div class="customer">
+            <!-- <img src="men (1).jpg" alt=""> <br> -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+            <p>Food was delicious and received instantly due to pre order</p>
+            
+        </div>
+        <div class="customer">
+            <!-- <img src="men (2).jpg" alt=""> <br> -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+            <p>Absolutely enjoyed quick serving and no waiting required</p>
+            
+        </div>
+        <div class="customer">
+            <!-- <img src="men (3).jpg" alt=""> <br> -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i>
+            <p>Tasty food ,saved lot of time from waiting</p>
+            
+        </div>    
+    </div>
+    <div class="review_btn">
+        <button onclick="pre()">Prev</button>
+        <button onclick="next()">Next</button>
+
+    </div>
+</div>
+ <br>
+ <br>
+ <br>
+   
+</body>
+</html>

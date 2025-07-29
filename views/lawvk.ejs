@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law VK</title>
+    <link rel="stylesheet" href="Foodweb.css">
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script>
+        var stripePublicKey = '<%= stripePublicKey %>'
+    </script>
+    <script src="foodweb.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"rel="stylesheet">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=mBJ_IboF3hw_NGagB9ogGTvsHZ8aAlOAS2rrfPsa7BZ9w6B7X9g7kf5_tfVzUOxCUZxnVatmIirG64QCS3tqoxzXgpD7xajXsWSkp4EuLN7DFwEJGq3ZC6IYCCdd5Z9_BHt439b9Gxip-WW3PTIfhqmLoIh-h4LvfhXgrO9CamZdKfrgSVMayKLCmiIVluU65I-Gc_KiMssVXM_xYhIo3yGoj9nsFMT6zqqLHGZJk47ob_S8JnhSh-Xt_F5tQPxvodL3rPAEhXdx3GjIfnlZUTwXDGGCccI1AJ13G6STKOvaMMAxw6lPHEOVbhqP3zQGCs4LFI1fvwy30_5fVtkPs_96E_WbmuQiiYswI0nv_tv70da6MLVGU_CtYLT89-woI7FeytCfRJ5ymDtZSehchblpPgUXhWekv8hlaNrU_wJJD_UAQbSvYSln8wASzeTYGKo5QXJDy60CO3pMH32t3440U_Up_TnQ6g3vgY4ZpR-PKgQVFo-uYSlQJTaDu9pjFnz8jfX0TiRnGpDPXkvRLi08BV0aw3bGnLWiatjr_HjVbCXZVMVF0xHFQaWS-wADEDfjJxfTUgv2tvfCLnBsHXuVwKrrKVI3ZapMakXsisEgLENvDKoxxHizqpUdVSwRKEScWzDqzA3199nX5O2i-JRWqBMN8XbW522SXYkkHtBK7TLsJti6GraTW377cx3pph0nNEr2DrvSMB2HAkMVFkHfWr8FmfWjSsRNmwO1ujEdRzsah1u-3uTICHr8aqv3nIOCT58yDrAJI7R_9rLxh7IXPADZS52_U55jFshIxtPjR2I_VWPJnYk1REWQEkSwUmowBPfdf2cBdNfZXXK75uUTS9WUgkW8Q6YrVANKRuFWJirDjOPbMBL5l2D47am_r05W7H6BKz0R7tsrVzNQuDNWXXL6yUrfUnBJyMn6YECBTXUUzYc9qjInfdVfgyx7opvuUzAfjw8SKvkXBniNnEFVvPUrO5bVWwAhMCJpCi8WpKomZR20RxeRLtCtz214GUzmdawafuf_RvOEOitpIuXUXKaM9aIgzN3WUqZtXp7hcRL0HxotV8xShrOHMdIUHbf_HQN8lwzH4wuEdlp7fq5hDW9T9Uo7_2rihFFBPZMdrzTzOccdzMGbKFyGKexRJ9jRW7v5RXriANaW-dxVLvB6jgXXL6iflMtS8eVk0AZGSl-yz2yrU_o9jNzT6AM2Ou18yEVrSAoj1hgH0mec-83qc8-oW50ADALxF5B4FeIY98ttafqwXWYJwOt7aGKuNe0AcWFdkHNOFQvcJFm4g46SeKqKC7vs4B2QwaVrtdzRwSaeZBgQkiCPAmKRHEfHGxacqbCd8eO6GlrO0vPSnwI3PdiRZMcxjeWW-qwcRYctty3nM-2D89AO3X4APiHTbL0HP4H5FCT9usZloNagMjlo-QSPo9f6tWcxvMHsG6ePndS6mlKG3V_-0RIseCxRfuRJ92wiDMFrSs0563zVQD8SYzrbuL8dbluvVOT99t9Shj-0R9mk91BcFL18GxanontAQ1CFUfud7Oq4apkEvVJJCcwRf2iLNZ-iJueuXffqX6erIIe-mQlkWx9l7V6af7X4hnb14v3VJMq562jrEaPTxIKUaabnoHOpyDxZ9oZVwflsRdsdyJNvaBzJ4zyl" nonce="9366ae5006a98f4814f8477e80679c32" charset="UTF-8"></script><script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="logo">
+                <h1>LAW VK</h1>
+            </div>
+            <div class="input">
+                <input type="text" value="" id="inp" placeholder="Search Here ..." onkeyup="myFun()" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icon">
+                <i onclick="login()" class="fa-solid fa-user"></i>
+                <a href="#cart" class="cart-button" style="color: aliceblue;">
+                    <i  class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="index">
+                <i class="fa-solid fa-house" style="color: aliceblue;"></i>
+                </a>
+            </div>
+        </nav>
+
+
+        <div class="login">
+            <h2>Log In </h2>
+            <input type="text" placeholder="Enter Your Name">
+            <input type="password" placeholder="Enter Password"> <br>
+            <button>Log In</button>
+
+        </div>
+        <!-- <div class="nav">
+            <a href="index">Home</a>
+        </div> -->
+
+        <table>
+            <tr>
+                <td>
+                    <div class="head">
+                        <h1><span>FOOD</span></h1>
+                    </div>
+                    <div class="crd">
+                        <% items.food.forEach(function(item){ %>
+                        <div class="card" data-item-id="<%= item.id %>">
+                            <img class="food-image" src="<%= item.imgName %>" alt="">
+                            <h2 class="food-price">₹<%= item.price %> </h2>
+                            <p class="food-title"><%= item.name %></p>
+                            <button class="order-btn" type="button"> Order Now</button>
+                        </div>
+                        <% }) %>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <div class="head">
+                        <h1><span>BEVERAGES</span></h1>
+                    </div>
+                    <div class="crd">
+                        <div class="crd">
+                            <% items.beverages.forEach(function(item){ %>
+                            <div class="card" data-item-id="<%= item.id %>">
+                                <img class="food-image" src="<%= item.imgName %>" alt="">
+                                <h2 class="food-price">₹<%= item.price %> </h2>
+                                <p class="food-title"><%= item.name %></p>
+                                <button class="order-btn" type="button"> Order Now</button>
+                            </div>
+                            <% }) %>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+                    
+                     
+
+        <section class="container content-section" id="cart">
+            <!-- <h2 class="section-header">CART</h2> -->
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PAY NOW</button>
+        </section>
+
+        <!-- Customer Review -->
+
+
+        <div class="head">
+            <h1><span>Students Review</span></h1>
+        </div>
+        <div class="review">
+
+            <div class="customer">
+                <img src="men (1).jpg" alt=""> <br>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <p>Food was delicious and received instantly due to pre order</p>
+                
+            </div>
+            <div class="customer">
+                <img src="men (2).jpg" alt=""> <br>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <p>Absolutely enjoyed quick serving and no waiting required</p>
+                
+            </div>
+            <div class="customer">
+                <img src="men (3).jpg" alt=""> <br>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <p>Tasty food ,saved lot of time from waiting</p>
+                
+            </div>
+
+            
+        </div>
+        <div class="btn">
+            <button onclick="pre()">Prev</button>
+            <button onclick="next()">Next</button>
+
+        </div>
+    </div>
+     <br>
+     <br>
+     <br>
+    <script src="Foodweb.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+{
+    "food":[
+        {
+            "id":1,
+            "name": "PANEER ROLL",
+            "price":60,
+            "imgName":"rolls2.jpg"
+        },
+        {
+            "id":4,
+            "name": "MAGGIE",
+            "price":40,
+            "imgName":"maggie.jpg"
+        },
+        {
+            "id":3,
+            "name": "BURGER",
+            "price":70,
+            "imgName":"burger1.jpg"
+        },
+        {
+            "id":2,
+            "name": "MUSHROOM SANDWICH",
+            "price":70,
+            "imgName":"sandwich1.jpg"
+        },
+        {
+            "id":5,
+            "name": "FRIES",
+            "price":60,
+            "imgName":"fries.jpg"
+        },
+        {
+            "id":6,
+            "name": "MUSHRROM ROLL",
+            "price":80,
+            "imgName":"mushroom roll.jpg"
+        },
+        {
+            
+            "id":7,
+            "name": "BREAD OMLET",
+            "price":40,
+            "imgName":"bread omlet.jpg"
+        },
+        {
+            "id":8,
+            "name": "CUTLET",
+            "price":60,
+            "imgName":"cutlet.jpg"
+        },
+        {
+            "id":9,
+            "name": "CLUB SANDWICH",
+            "price":70,
+            "imgName":"clubsandwich.jpg"
+        },
+        {
+            "id":10,
+            "name": "CHEESE BURGER",
+            "price":70,
+            "imgName":"burger3.jpg"
+        },
+        {
+            "id":11,
+            "name": "SAMOSA",
+            "price":40,
+            "imgName":"samosa1.jpg"
+        },
+        {
+            "id":12,
+            "name": "NOODLES",
+            "price":60,
+            "imgName":"noodles1.jpeg"
+        }
+    ],
+    "beverages":[
+        {
+            "id":100,
+            "name": "WATERMELON JUICE",
+            "price":40,
+            "imgName":"watermelon.jpg"
+        },
+        {
+            "id":101,
+            "name": "Tea",
+            "price":10,
+            "imgName":"tea2.jpg"
+        },
+        {
+            "id":102,
+            "name": "COFFEE",
+            "price":10,
+            "imgName":"coffee.jpg"
+        },
+        {
+            "id":103,
+            "name": "STRAWBERRY JUICE",
+            "price":60,
+            "imgName":"strawberry.jpg"
+        },
+        {
+            "id":104,
+            "name": "OREO MILKSHAKE",
+            "price":50,
+            "imgName":"oreo1.jpg"
+        },
+        {
+            "id":105,
+            "name": "BADAM MILK",
+            "price":50,
+            "imgName":"badam.jpg"
+        },
+        {
+            "id":106,
+            "name": "BLUE LIME SODA",
+            "price":50,
+            "imgName":"bluelimesoda.jpg"
+        },
+        {
+            "id":107,
+            "name": "MUSKMELON JUICE",
+            "price":40,
+            "imgName":"muskmelon.jpg"
+        },
+        {
+            "id":108,
+            "name": "NIMBU SODA",
+            "price":35,
+            "imgName":"neembo.jpg"
+        }
+    ] 
+}
